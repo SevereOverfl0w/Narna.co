@@ -6,6 +6,7 @@
 @import "compass/reset";
 @import "susy";
 @import url(http://fonts.googleapis.com/css?family=Chivo:900|Open+Sans:700|Lobster);
+@import url(https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css);
 
 $total-columns: 12;
 
@@ -35,6 +36,10 @@ body {
     }
 }
 
+section {
+    margin-top: 30px;
+}
+
 .intro {
     text-align: center;
 
@@ -44,6 +49,20 @@ body {
         font-size: 1.5em;
     }
 }
+
+.contact {
+    text-align: center;
+    i {
+        font-size: 4em;
+        color: black;
+        cursor: pointer;
+    }
+
+    i:hover {
+        color: rgb(20, 154, 212);
+    }
+}
+
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Chivo", serif;
