@@ -1,0 +1,55 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "susy";
+@import url(http://fonts.googleapis.com/css?family=Chivo:900|Open+Sans:700|Lobster);
+
+$total-columns: 12;
+
+main {
+    @include container;
+    header, footer { clear: both; }
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-image: url('../images/background.png');
+    padding-top: 60px;
+}
+
+.brand {
+    font-size: 1.7em;
+    color: black;
+
+    font-family: "Lobster", cursive;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    small {
+        font-size: 0.5em;
+        color: grey;
+    }
+}
+
+.intro {
+    text-align: center;
+
+    #sub {
+        margin-top: 5px;
+        color: rgb(20, 154, 212);
+        font-size: 1.5em;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Chivo", serif;
+    color: rgb(68, 58, 51);
+}
+
+h1 {
+    font-size: 2.6em;
+}
