@@ -18,7 +18,7 @@ main {
 body {
     font-family: "Open Sans", sans-serif;
     background-image: url('../images/background.png');
-    padding-top: 60px;
+    padding-top: 20px;
 }
 
 .brand {
@@ -87,10 +87,8 @@ section {
         margin-top: 2em;
         text-align: center;
         width: 70%;
-        /**
         margin-left: auto;
         margin-right: auto;
-        **/
         line-height: 1.2em;
 
         p { padding-left: 1.5em; font-size: 0.9em; text-align: left; }
@@ -122,4 +120,10 @@ hr {
 
 strong {
     font-weight: 700;
+}
+
+@media only screen and (max-width: 340px) {
+    body {
+        font-size: 12px;
+    }
 }
